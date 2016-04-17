@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testpage</title>
+</head>
+<body>
+{% if number_list %}
+
+    {% for i in number_list %}
+        <button>{{ i }}</button><hr>
+    {% endfor %}
+
+
+    {{ hellostring }}
+{% else %}
+    <p>No number available</p>
+{% endif %}
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Django default" uuid="33e0152d-913d-4653-b8e7-2ac095e78701">
+      <user-name>postgres</user-name>
+      <user-password>dfebdfc8dfc9dfcedfcfdf9adf9bdf9cdf9edf9adf9a</user-password>
+      <schema-pattern>mydb.pg_catalog mydb.public</schema-pattern>
+      <default-schemas>mydb.public</default-schemas>
+    </data-source>
+  </component>
+</project>
