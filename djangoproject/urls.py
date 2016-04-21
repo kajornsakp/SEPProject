@@ -19,6 +19,7 @@ from djangoapp import views
 import djangoapp
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'test/',views.index),
+    url(r'test',views.index),
+    url(r'login',views.login)
     
 ]
