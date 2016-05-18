@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'djangoproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'kmitldb',
+        'NAME': 's7090006',
         'USER':'s7090006',
         'PASSWORD':'Abcde016400',
         'HOST':'localhost',

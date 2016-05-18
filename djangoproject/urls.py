@@ -20,6 +20,10 @@ import djangoapp
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'test',views.index),
-    url(r'login',views.login)
+    url(r'login',views.login),
+    url(r'reminder',views.reminder),
+    url(r'calendar',views.calendar),
+    url(r'note',views.note),
+    url(r'hw',views.hardware),
     
 ]
