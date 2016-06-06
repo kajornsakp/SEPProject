@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b75d87ee-0c64-4294-b00b-0563f204983a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/djangoapp/Separator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/djangoapp/CalendarHandler.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/djangoapp/HandlerAbstract.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/djangoapp/NoteHandler.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/djangoapp/QueryHandler.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/djangoapp/ReminderHandler.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/djangoapp/Separator.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/djangoapp/models.py" afterPath="$PROJECT_DIR$/djangoapp/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/djangoapp/views.py" afterPath="$PROJECT_DIR$/djangoapp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/djangoproject/settings.py" afterPath="$PROJECT_DIR$/djangoproject/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/djangoproject/urls.py" afterPath="$PROJECT_DIR$/djangoproject/urls.py" />
     </list>
     <ignored path="djangoproject.iws" />
@@ -42,16 +43,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/djangoproject/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,13 +53,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/djangoapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="330">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoteHandler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/djangoapp/NoteHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReminderHandler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/djangoapp/ReminderHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,8 +90,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/djangoapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+            <state relative-caret-position="-4683">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -86,42 +99,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/djangoapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/djangoproject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Separator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/djangoapp/Separator.py">
+      <file leaf-file-name="QueryHandler.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/djangoapp/QueryHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/djangoapp/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="315">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="e#1#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,8 +144,14 @@
         <option value="$PROJECT_DIR$/djangoproject/settings.py" />
         <option value="$PROJECT_DIR$/djangoapp/Separator.py" />
         <option value="$PROJECT_DIR$/djangoproject/urls.py" />
-        <option value="$PROJECT_DIR$/djangoapp/views.py" />
         <option value="$PROJECT_DIR$/djangoapp/models.py" />
+        <option value="$PROJECT_DIR$/djangoapp/views.py" />
+        <option value="$PROJECT_DIR$/djangoapp/HardwareHandler.py" />
+        <option value="$PROJECT_DIR$/djangoapp/ReminderHandler.py" />
+        <option value="$PROJECT_DIR$/djangoapp/HandlerAbstract.py" />
+        <option value="$PROJECT_DIR$/djangoapp/CalendarHandler.py" />
+        <option value="$PROJECT_DIR$/djangoapp/NoteHandler.py" />
+        <option value="$PROJECT_DIR$/djangoapp/QueryHandler.py" />
       </list>
     </option>
   </component>
@@ -161,9 +162,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -190,6 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,24 +219,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="djangoapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="djangoproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="djangoproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="djangoproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -251,30 +234,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="djangoapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="djangoproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="djangoproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="djangoapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -627,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1463215411258</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change to update models , add calendar&#10;">
+      <created>1463564196734</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1463564196735</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -640,34 +611,60 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271028" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32673267" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17932148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18712871" sideWeight="0.4951535" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44041452" sideWeight="0.50532484" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772276" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32673267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31308413" sideWeight="0.49192247" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32574257" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2859425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3109589" sideWeight="0.4946752" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32574257" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3847352" sideWeight="0.496875" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31287128" sideWeight="0.49192247" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18712871" sideWeight="0.4951535" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44041452" sideWeight="0.50532484" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32574257" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3847352" sideWeight="0.496875" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772276" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32673267" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31287128" sideWeight="0.49192247" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45841584" sideWeight="0.4946752" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17465389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -683,7 +680,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test login_required decorator" />
     <MESSAGE value="change to kmitl db mysql&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to kmitl db mysql&#10;" />
+    <MESSAGE value="change to update models , add calendar&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to update models , add calendar&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -692,90 +690,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/djangoapp/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoproject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoproject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoproject/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/djangoapp/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -916,13 +830,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/djangoapp/migrations/0004_auto_20160428_1328.py" />
     <entry file="file://$PROJECT_DIR$/djangoapp/migrations/0003_auto_20160428_1327.py" />
-    <entry file="file://$PROJECT_DIR$/djangoapp/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/33e0152d-913d-4653-b8e7-2ac095e78701/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -930,147 +837,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/33e0152d-913d-4653-b8e7-2ac095e78701.DATABASE:mydb">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>33e0152d-913d-4653-b8e7-2ac095e78701.DATABASE:mydb</OriginalElement>
-          <nodes>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_seclabels</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.django_admin_log</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_user</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_all_indexes</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stats</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_database</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_settings</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.auth_group_permissions</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_pltemplate</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.auth_user_groups</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_replication_origin_status</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_activity</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_xact_all_tables</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_policies</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_constraint</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_ts_config</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_shadow</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_trigger</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_xact_user_tables</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.djangoapp_note_user</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_authid</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.auth_permission</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_cursors</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_auth_members</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_statio_all_sequences</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_user_mappings</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.djangoapp_commandlog</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_seclabel</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_available_extensions</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_operator</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_inherits</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_rewrite</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_conversion</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_tables</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_ts_config_map</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_replication_origin</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_timezone_names</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.djangoapp_user</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_ts_template</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_timezone_abbrevs</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_largeobject</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_aggregate</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_xact_user_functions</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_opclass</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_default_acl</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_depend</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.auth_user</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_opfamily</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_attribute</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_user_mapping</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_replication_slots</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_locks</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_user_tables</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.djangoapp_note</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_policy</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_cast</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_class</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_statistic</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_ts_parser</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_range</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_sys_indexes</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_foreign_table</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_description</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_database</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_event_trigger</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_am</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_type</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.djangoapp_commandlog_user</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_shseclabel</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_transform</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_group</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_prepared_statements</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_rules</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.auth_user_user_permissions</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_namespace</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_proc</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_collation</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_statio_user_tables</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_amop</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_statio_sys_tables</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_file_settings</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_database_conflicts</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_archiver</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_enum</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_ssl</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_user_indexes</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_statio_user_indexes</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_matviews</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.auth_group</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.djangoapp_person</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_index</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_tablespace</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.django_session</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_xact_sys_tables</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_statio_sys_indexes</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_shdescription</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_foreign_server</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_bgwriter</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_largeobject_metadata</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_foreign_data_wrapper</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_language</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_attrdef</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_sys_tables</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_statio_all_indexes</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_user_functions</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_statio_user_sequences</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_views</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_db_role_setting</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_shdepend</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_replication</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_statio_all_tables</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_available_extension_versions</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_roles</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_statio_sys_sequences</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_amproc</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_stat_all_tables</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_extension</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.django_migrations</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.pg_catalog.pg_ts_dict</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.TABLE:mydb.public.django_content_type</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_indexes</node>
-            <node x="" y="">33e0152d-913d-4653-b8e7-2ac095e78701.VIEW:mydb.pg_catalog.pg_prepared_xacts</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5966494845360825" x="5238.0" y="-452.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
+    <entry file="uml://DATABASE/33e0152d-913d-4653-b8e7-2ac095e78701.DATABASE:mydb" />
     <entry file="file://$PROJECT_DIR$/djangoapp/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1108,26 +875,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/djangoapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangoproject/urls.py">
+    <entry file="file://$PROJECT_DIR$/djangoapp/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoapp/migrations/0004_auto_20160517_1830.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Python/#/Users/kajornsak/PycharmProjects/djangoproject/djangoapp/views.py" />
+    <entry file="uml://Python/djangoapp.models.Calendar" />
+    <entry file="file://$PROJECT_DIR$/djangoapp/HardwareHandler.py" />
+    <entry file="file://$PROJECT_DIR$/djangoproject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1140,38 +915,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangoproject/settings.py">
+    <entry file="uml://DjangoModelDependency/#djangoproject" />
+    <entry file="uml://Python/#/Users/kajornsak/PycharmProjects/djangoproject/djangoapp/HandlerAbstract.py" />
+    <entry file="file://$PROJECT_DIR$/djangoapp/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoapp/CalendarHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Python/#/Users/kajornsak/PycharmProjects/djangoproject/djangoapp/CalendarHandler.py" />
+    <entry file="file://$PROJECT_DIR$/djangoapp/HandlerAbstract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoproject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/djangoapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        <state relative-caret-position="-4683">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/Separator.py">
+    <entry file="file://$PROJECT_DIR$/djangoapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoapp/ReminderHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoapp/NoteHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/models.py">
+    <entry file="file://$PROJECT_DIR$/djangoapp/QueryHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        <state relative-caret-position="315">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#1#53#0" expanded="true" />
           </folding>
         </state>
       </provider>

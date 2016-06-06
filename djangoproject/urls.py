@@ -19,11 +19,20 @@ from djangoapp import views
 import djangoapp
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'test',views.index),
-    url(r'login',views.login),
-    url(r'reminder',views.reminder),
-    url(r'calendar',views.calendar),
-    url(r'note',views.note),
-    url(r'hw',views.hardware),
-    
+    url(r'^q',views.query),
+    url(r'^history',views.history),
+    url(r'^register',views.register),
+    url(r'^login',views.login),
+    url(r'^reminder',views.reminder),
+    url(r'^deletereminder', views.deletereminder),
+    url(r'^updatereminder', views.updatereminder),
+    url(r'^note',views.note),
+    url(r'^deletenote',views.deletenote),
+    url(r'^updatenote',views.updatenote),
+    url(r'^calendar', views.calendar),
+    url(r'^updatecalendar',views.updatecalendar),
+    url(r'^deletecalendar',views.deletecalendar),
+    url(r'^hw', views.hardware),
+    url(r'^updatehw',views.updatehw),
+    url(r'^deletehw',views.deletehw),
 ]

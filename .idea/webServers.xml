@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="521ad6e7-afca-4d55-a7f5-108bfb4ba4ca" name="kmitl" url="http://161.246.94.246">
+        <fileTransfer host="161.246.94.246" port="22" rootFolder="/home/s7090006" accessType="SFTP" password="dfebdfc8dfc9dfcedfcfdf9adf9bdf9cdf9edf9adf9a" username="s7090006">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
